@@ -1,0 +1,125 @@
+#liste_releases .release {
+	height: 40px;
+	margin-top: 5px;
+}
+
+#liste_releases h2 {
+	display: block;
+	float: left;
+	font-size: 1.2em;
+	height: 40px;
+	line-height: 40px;
+	margin: 0;
+	padding: 0 0 0 5px;
+	width: 385px;
+}
+
+#liste_releases .release .label {
+	display: block;
+	font-size: 13px;
+	height: 40px;
+	line-height: 40px;
+	margin-left: 419px;
+	width: 114px;
+}
+
+
+
+.release .rel_show {
+	margin-left: 550px;
+	margin-top: -25px;
+	position: absolute;
+}
+
+.release .button_delete {
+	float: right;
+	font-size: 0.8em;
+	margin-right: 10px;
+	margin-top: -34px;
+}
+
+.release.hidden { display: none; }
+
+
+
+
+/* FICHE */
+#release_edit {
+		padding: 5px;
+}
+
+#release_edit.hidden {
+		padding: 0px;
+		display: none;
+}
+
+#release_add {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 10px;
+		text-align: center;
+		width: 190px;
+}
+
+fieldset {
+		border: 1px solid black;
+		margin-top: 5px;
+		padding: 5px;
+}
+
+
+#release_edit .rel_tracklist table {
+	    border: 0;
+	    font-size: 0.8em;
+	    width: 100%;
+}
+
+#release_edit .rel_tracklist table td {
+	    border: 1px solid #000000;
+}
+
+
+
+.rel_tracklist table td.tra_digit {
+	width: 85px;
+}
+
+.rel_tracklist table td.tra_digit input {
+	width: 80px;
+}
+
+.rel_tracklist table td.tra_name textarea {
+	height: 50px;
+	width: 198px;
+}
+
+.rel_tracklist table td.tra_url {
+	width: 345px;
+}
+
+.rel_tracklist table td.tra_url input {
+	width: 340px;
+}
+
+#release_edit .rel_tracklist table td.delete {
+	background: url("../images/delete_16x16.png") no-repeat center center transparent;
+	width: 16px;
+	cursor: pointer;
+}
+
+.menu_tab { text-align: center; margin-top: 3px; }
+
+
+.rel_paypal label {
+	display: inline-block;
+	width: 200px;
+}
+.rel_download input {
+
+  width: 400px;
+}
+
+input[name="rel_paypal_encrypted"] {
+  width: 400px;
+}

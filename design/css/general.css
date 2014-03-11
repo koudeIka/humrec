@@ -1,0 +1,377 @@
+/*@import url(http://fonts.googleapis.com/css?family=Nova+Mono|Comfortaa|Nixie+One);*/
+
+@font-face {
+    font-family: 'WireWyrmLight';
+    src: url('../fonts/wirewyrm-webfont.eot');
+    src: url('../fonts/wirewyrm-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/wirewyrm-webfont.woff') format('woff'),
+         url('../fonts/wirewyrm-webfont.ttf') format('truetype'),
+         url('../fonts/wirewyrm-webfont.svg#WireWyrmLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'WireWyrmItalic';
+    src: url('../fonts/wirewyrmitalic-webfont.eot');
+    src: url('../fonts/wirewyrmitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/wirewyrmitalic-webfont.woff') format('woff'),
+         url('../fonts/wirewyrmitalic-webfont.ttf') format('truetype'),
+         url('../fonts/wirewyrmitalic-webfont.svg#WireWyrmItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'WireWyrmMedium';
+    src: url('../fonts/wirewyrmmedium-webfont.eot');
+    src: url('../fonts/wirewyrmmedium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/wirewyrmmedium-webfont.woff') format('woff'),
+         url('../fonts/wirewyrmmedium-webfont.ttf') format('truetype'),
+         url('../fonts/wirewyrmmedium-webfont.svg#WireWyrmMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* { border: 0 none; margin: 0; padding: 0; }
+
+html { font-size: 100%; }
+
+body { margin: 0; padding: 0; font-family: "WireWyrmMedium", serif; font-size: .8em; line-height: 1.25; color: #4A4B4C; background: #FFFFFF; }
+
+a { outline: none; }
+img { border: 0; }
+
+#global {
+	background-color: #FFFFFF;
+    box-shadow: 0 0 10px 3px #CCCCCC;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: visible;
+    width: 1000px;
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#entete {
+	/*height: 250px;*/
+	border-bottom: 1px solid #D4D4D4;
+	height: 218px;
+	margin-bottom: 22px;
+	color: #FFFFFF;
+	background: transparent;
+}
+#entete .banner { display: none; }
+
+#entete.test318 {
+	height: 318px;
+}
+#entete.test268 {
+	height: 268px;
+	
+}
+#entete.test268 .banner, #entete.test318 .banner { display: block; }
+
+.label_title, .label_title:visited {
+    font-size: 70px;
+    letter-spacing: 3px;
+    margin-left: 30px;
+    margin-top: 73px;
+    position: absolute;
+    text-decoration: none;
+    color: #FFFFFF;
+    z-index: 9;
+}
+
+.label_slogan {
+    font-size: 18px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-top: 127px;
+    padding: 0;
+    position: absolute;
+    right: 100px;
+    z-index: 9;
+}
+
+#entete_menu { height: 65px; }
+
+
+
+#centre { background: center center  repeat-y; }
+
+#navigation { width: 300px; float: left; }
+
+
+#contenu { margin-left: 300px; padding: 5px; color: #4A4B4C; min-height: 580px; }
+
+
+#pied { background: center center no-repeat; height: 56px;  }
+
+#pied_plan, #pied_plan:visited { border: 0 none; color: #FFFFFF; display: block; font-size: 13px; margin-left: 802px; margin-top: 31px; position: absolute; text-decoration: none; }
+
+
+
+
+/* MENU DES LANGUES */
+
+.menu_langs {
+	border: 0 none;
+    height: 25px;
+    list-style: none outside none;
+    margin: 0 0 0 822px;
+    padding: 0;
+    position: relative;
+    width: 175px;
+}
+
+.menu_langs li {
+	display: block;
+	float: right;
+}
+
+.menu_langs li a, .menu_langs li a:visited {
+	border: 1px solid #FFFFFF;
+    border-radius: 11px 11px 11px 11px;
+    color: #4A4B4C;
+    display: block;
+    font-size: 0.9em;
+    margin: 0 5px;
+    padding: 2px 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.menu_langs li a:hover {
+    border: 1px solid #DDDDDD;
+    color: #89C4EC;
+    text-decoration: none;
+}
+.menu_langs li a.selected {
+    background-color: #22a2d3;
+    border: 1px solid #22a2d3;
+    color: #FFFFFF;
+}
+
+/* NAVIGATION */
+
+.navi_blur {
+	margin: 0 0 10px 30px;
+	padding: 0;
+	position: relative;
+	width: 200px;
+}
+
+.navi_blur li {
+	display: block;
+	font-size: 24px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	font-weight: bold;
+}
+
+
+/* OLD VERSION
+.navi_blur li a {
+	text-decoration: none;
+	color: transparent;
+	display: block;
+	text-transform: uppercase;
+	text-shadow: 0 0 2px #000000;
+	letter-spacing: 3px;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+.navi_blur:hover li a {
+	text-shadow: 0px 0px 6px #000000;
+}
+.navi_blur li a:hover {
+	color: #4A4B4C;
+	text-shadow: 0px 0px 1px #000000;
+	padding-left: 18px;
+}
+.navi_blur li a.active {
+	color: #4A4B4C;
+	text-shadow: 0px 0px 1px #000000;
+	padding-left: 18px;
+}
+.navi_blur:hover li a.active {
+	text-shadow: 0px 0px 6px #000000;
+}*/
+
+.navi_blur li a {
+	color: transparent;
+	text-decoration: none;
+	display: block;
+	text-transform: uppercase;
+	text-shadow: 0px 0px 6px #000000;
+	letter-spacing: 3px;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.navi_blur li a.active {
+	border-bottom: 1px solid #D9D9D9;
+	color: #4A4B4C;
+	text-shadow: 0 0 1px #000000;
+}
+
+.navi_blur:hover li a {
+	text-shadow: 0px 0px 6px #000000;
+	color: transparent;
+}
+
+.navi_blur:hover li a.active {
+	text-shadow: 0px 0px 6px #000000;
+}
+
+.navi_blur li a:hover {
+	color: #4A4B4C;
+	text-shadow: 0px 0px 1px #000000;
+	/*padding-left: 18px;*/
+}
+
+.navi_blur li a.active:hover {
+	color: #4A4B4C;
+	text-shadow: 0px 0px 1px #000000;
+}
+
+
+
+/* HELPER */
+
+
+.clear { clear: both; height: 0px; zoom: 1;}
+
+
+
+
+
+
+h1 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+h2 {
+	color: #333333;
+	font-weight: bold;
+	line-height: 125%;
+	white-space: normal;
+	font-size: 17px;
+	border-bottom: 1px dotted #8B8D83;
+	padding-bottom: 0.2em;
+	margin-bottom: 15px;
+	width: 500px;
+}
+
+
+/* drop shadow*/
+
+/*
+.cadre-img-shadow {
+	position:relative;
+	padding:1em;
+	margin:0;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	background:#fff;
+	-webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	-moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	-ms-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.cadre-img-shadow:before,
+.cadre-img-shadow:after {
+	content:"";
+	position:absolute;
+	z-index:-2;
+}
+
+.lifted {
+	-webkit-border-radius: 5px;
+	-moz-border-radius:4px;
+	border-radius:4px;
+}
+.lifted:before,
+.lifted:after {
+	bottom:15px;
+	left:10px;
+	width:50%;
+	height:20%;
+	-webkit-box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+	-moz-box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+	box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+	-webkit-transform:rotate(-3deg);
+	-moz-transform:rotate(-3deg);
+	-ms-transform:rotate(-3deg);
+	-o-transform:rotate(-3deg);
+	transform:rotate(-3deg);
+}
+.lifted:after {
+	right:10px;
+	left:auto;
+	-webkit-transform:rotate(3deg);
+	-moz-transform:rotate(3deg);
+	-ms-transform:rotate(3deg);
+	-o-transform:rotate(3deg);
+	transform:rotate(3deg);
+}*/
+
+
+
+a.link_in_text, a.link_in_text:visited {
+	border-bottom: 1px solid #D9D9D9;
+	color: #3589C1;
+	text-decoration: none;
+}
+
+a.link_in_text:hover {
+	border-bottom: 1px solid #FFFFFF;
+}
+
+.spacer { clear: both; height: 1px; }
+
+
+#newsletter {
+      margin-left: 30px;
+      margin-top: 70px;
+      font-size: 15px;
+}
+
+#newsletter label {
+       font-family: WireWyrmLight, serif;
+      margin-top: 10px;
+      margin-bottom: 25px;
+}
+
+#newsletter input {
+	border: 1px solid #D9D9D9;
+	height: 22px;
+	width: 200px;
+	margin-top: 10px;
+	background-color: #FFFFFF;
+}
+
+#newsletter input.focus {
+	border: 1px solid #4A4B4C;
+}
+
+.news_alert {
+      font-family: WireWyrmLight, serif;
+      font-weight: bold;
+}
+

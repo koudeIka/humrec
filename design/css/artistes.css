@@ -1,0 +1,33 @@
+.artiste {
+	margin-top: 30px;
+	margin-bottom: 60px;
+	position: relative;
+}
+
+h2 {
+	width: 465px;
+}
+
+.art-description {
+	width: 465px;
+	font-size: 15px;
+	line-height: 1.3em;
+}
+
+.art_homepage {
+	position: absolute;
+	width: 465px;
+	margin-top: 10px;
+	font-size: 15px;
+}
+
+.art_pho_big {
+	width: 200px;
+	height: 200px;
+	float: right;
+	margin-top: 18px;
+}
+
+
+.art-description a, .art-description a:visited { border-bottom: 1px solid #D9D9D9; color: #3589C1; text-decoration: none; }
+.art-description a:hover { border-bottom: 1px solid #FFFFFF; }

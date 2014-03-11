@@ -1,0 +1,91 @@
+.release {
+	margin-top: 30px;
+	margin-bottom: 50px;
+	position: relative;
+}
+
+h2 { width: 465px; margin-bottom: 4px; }
+h3 { color: #8B8D83; font-size: 14px; }
+
+
+
+.release-cover {
+	width: 175px;
+	height: 250px;
+	float: right;
+	margin-right: 10px;
+}
+
+.release-content {
+	margin-right: 193px;
+	padding: 0;
+	margin: 0;
+	margin-top: 15px;
+	font-size: 16px;
+	line-height: 1.3em;
+}
+
+.release-content-footer {
+	padding: 0;
+	margin: 0;
+	font-size: 16px;
+}
+
+.release-content a, .release-content a:visited { border-bottom: 1px solid #D9D9D9; color: #3589C1; text-decoration: none; }
+.release-content a:hover { border-bottom: 1px solid #FFFFFF; }
+
+
+.release-tracklist, .release-tracklist li {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style-type: none;
+	font-size: 11px;
+}
+
+.release-tracklist {
+	margin-left: 20px;
+	margin-top: 50px;
+	width: 420px;
+}
+
+.release-tracklist li {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+
+.release-options {
+	width: 467px;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.release-download {
+	display: inline-block;
+	background: url(../images/heaphones_16x14.png) top left no-repeat transparent;
+	font-size: 15px;
+	height: 14px;
+	line-height: 14px;
+	padding-left: 25px;
+}
+
+.paypalForm {
+	display: none;
+}
+
+.release-buy {
+	display: inline-block;
+	background: url(../images/paypal_14x14.png) top left no-repeat transparent;
+	font-size: 15px;
+	height: 14px;
+	line-height: 14px;
+	padding-left: 25px;
+}
+
+.separator {
+	height: 14px;
+	line-height: 14px;
+	margin-left: 10px;
+	margin-right: 10px;
+}

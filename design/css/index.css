@@ -1,0 +1,6 @@
+.new { font-size: 11px; margin: 0 0 15px; padding: 0; margin-bottom: 40px; }
+.new ul { margin: 10px 10px 10px 30px; }
+.new a, a:visited { border-bottom: 1px solid #D9D9D9; color: #3589C1; text-decoration: none; }
+.new a:hover { border-bottom: 1px solid #FFFFFF; }
+.new-date { color: #8B8D83; font-size: 13px; }
+.new-content { color: #333333; line-height: 1.3em; font-size: 15px; width: 613px; }

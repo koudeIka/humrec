@@ -1,0 +1,41 @@
+; <?php die( 'Please do not access this page directly.' ); ?>;
+;=======================================================================;
+;== About conf.ini
+;==-------------------------------------------------------------------==;
+;== This file contains the configuration website
+;== Copyright (c) 2009-2010 - MAQPRINT
+;== Contributor : Patrick PERONNY
+;=======================================================================;
+[general]
+;-- The name of website
+name	= "Humus"
+url_public = "http://195.115.98.84/tmp/patrick/chinabox"
+url_admin = "http://195.115.98.84/tmp/patrick/chinabox/"
+
+[folder]
+base	= "/var/www/tmp/patrick/chinabox/"
+public = "/var/www/tmp/patrick/chinabox/"
+includes	= "/var/www/tmp/patrick/chinabox/includes/"
+classes	= "/var/www/tmp/patrick/chinabox/includes/classes/"
+puppets	= "/var/www/tmp/patrick/chinabox/includes/puppets/"
+
+[path]
+images	= "design/images/"
+css = "design/css/"
+js_library = "includes/js/"
+js_local = "js/"
+images_label_150x150 = "images/150x150/"
+images_label_240x400 = "images/240x400/"
+images_label_200x300 = "images/200x300/"
+images_label_200x200 = "images/200x200/"
+images_label_realsize = "images/realsize/"
+
+[mysql]
+server	= "192.168.0.207"
+user	= "pperonny"
+password	= "xRxnAcRqmTbMjPYw"
+database	= "pperonny"
+
+
+[mail]
+

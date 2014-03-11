@@ -1,0 +1,23 @@
+#login											{ width:410px; text-align:center; margin:0px auto; position:relative;top:150px; }
+#login h1										{ font-size:18px; color:#F29400; text-shadow:0 1px 0 #FFFFFF, 0 -1px 0 #000000; }
+#login h2										{ font-size:14px; color:#777777; text-shadow:0 1px 0 #FFFFFF, 0 -1px 0 #000000; }
+#login ul										{ background:-moz-linear-gradient(100% 100% 90deg, #EFEFEF, #ffffff); background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffffff), to(#EFEFEF)); border-radius:4px; list-style-type:none; margin:10px 0 20px; padding:10px; box-shadow:0px 1px 3px rgba(0, 0, 0, 0.5); -webkit-box-shadow:0px 1px 3px rgba(0, 0, 0, 0.5); }
+#login li										{ margin:5px; }
+#login label									{ text-align:right; padding-right:10px; float:left; color:#777777; font-size:15px; line-height:24px; width:125px; text-shadow:0 1px 0 #FFFFFF; }
+#login input[type=password],
+#login input[type=text]							{ border-radius:3px; padding:3px; font-size:16px; border:1px solid #282828; border-bottom:1px solid #616161; background:#353535; color:white; box-shadow:0 0 5px 1px #000000 inset; }
+#login input[type=password]:hover,
+#login input[type=text]:hover					{ border:1px solid #5488ba; border-bottom:1px solid #7cb3e8; box-shadow:0 0 5px 1px #000000 inset, 0 0 5px 1px #5488ba; -webkit-box-shadow:0 0 5px 1px #000000 inset, 0 0 5px 1px #5488ba; }
+#login a										{ line-height:40px; color:#0A529D; font-weight:bold; font-size:12px; text-shadow:0 1px 0 #FFFFFF; }
+#login a:hover									{ color:#4291e4; }
+#login a:active									{ color:#F29400; }
+#login #message									{ background:-moz-linear-gradient(100% 100% 85deg, #FFE1E1, #FDBBBB); background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#FDBBBB), to(#FFE1E1)); box-shadow:1px 1px 5px rgba(0, 0, 0, 0.25); -webkit-box-shadow:1px 1px 5px rgba(0, 0, 0, 0.25); color:#222222; font-weight:bold; left:-3px; line-height:18px; padding:8px; position:absolute; text-shadow:0 1px 0 #FFFFFF; top:65%; width:75%; }
+#login #message #clip							{ float:left; margin:0 0 0 -15px; width:46px; height:18px; background:url('../images/clip.png'); }
+#login #message #close							{ cursor:pointer; float:right; font-size:24px; font-weight:normal; height:18px; opacity:0.55; width:18px; }
+#login #message #close:hover 					{ color:red; }
+#login #message #close:active 					{ color:black; }
+
+#login input[type=submit]								{ background:#EA6221; cursor:pointer; color:#FFFFFF; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px; -moz-box-shadow:0 1px 0 rgba(0, 0, 0, 0.1); border-top:1px solid #ffc384; border-bottom:1px solid #ea6221; border-left:1px solid #ffa23f; border-right:1px solid #ea6221; cursor:pointer; display:inline-block; font-size:14px; font-weight:bold; height:32px; line-height:34px; margin:10px 0 0 0; padding:0 15px; text-shadow:0 1px 0 #ffa23f, 0 -1px 0px #ea6221; background:-moz-linear-gradient(100% 100% 90deg, #ed6d24, #ffa23f); background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffa23f), to(#ed6d24)); }
+#login input[type=submit]:hover						{ color:#000000; box-shadow:0 0 8px rgba(255, 162, 63, 0.8); }
+#login input[type=submit]:active						{ text-shadow:0 1px 0 #ea6221, 0 -1px 0px #ffa23f; background:-moz-linear-gradient(100% 100% 90deg, #ffa23f, #ed6d24); background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#ed6d24), to(#ffa23f)); }
+ 

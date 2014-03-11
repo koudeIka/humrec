@@ -1,0 +1,144 @@
+.release {
+	margin-top: 30px;
+	margin-bottom: 50px;
+	position: relative;
+}
+
+h2 { width: 465px; margin-bottom: 4px; }
+h3 { color: #8B8D83; font-size: 14px; }
+
+
+
+.release-cover {
+	width: 175px;
+	height: 250px;
+	float: right;
+	margin-right: 10px;
+}
+
+.release-content {
+	margin-right: 193px;
+	padding: 0;
+	margin: 0;
+	margin-top: 15px;
+	margin-bottom: 5px;
+	font-size: 15px;
+	line-height: 1.3em;
+}
+
+.release-content-footer {
+	padding: 0;
+	margin: 0;
+	font-size: 15px;
+}
+
+.release-content a, .release-content a:visited { border-bottom: 1px solid #D9D9D9; color: #3589C1; text-decoration: none; }
+.release-content a:hover { border-bottom: 1px solid #FFFFFF; }
+
+
+/*.release-tracklist, .release-tracklist li {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	list-style-type: none;
+	font-size: 11px;
+}
+
+.release-tracklist {
+	margin-left: 20px;
+	margin-top: 50px;
+	width: 420px;
+}
+
+.release-tracklist li {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}*/
+
+
+.release-options {
+	width: 467px;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 50px;
+}
+
+.release-download {
+	display: inline-block;
+	background: url(../images/heaphones_16x14.png) top left no-repeat transparent;
+	font-size: 15px;
+	height: 14px;
+	line-height: 14px;
+	padding-left: 25px;
+}
+
+.paypalForm {
+	display: none;
+}
+
+.release-buy {
+	display: inline-block;
+	background: url(../images/paypal_14x14.png) top left no-repeat transparent;
+	font-size: 15px;
+	height: 14px;
+	line-height: 14px;
+	padding-left: 25px;
+}
+
+.separator {
+	height: 14px;
+	line-height: 14px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+
+/*ol { padding: 0px; margin: 0px; list-style: decimal-leading-zero inside; color: #ccc; width: 460px; border-top: 1px solid #ccc; font-size: 0.9em; }
+      ol li { position: relative; margin: 0px; padding: 9px 2px 10px; border-bottom: 1px solid #ccc; cursor: pointer; }
+      ol li a { display: block; text-indent: -3.3ex; padding: 0px 0px 0px 20px; }
+      li.playing { color: #aaa; text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.3); }
+      li.playing a { color: #000; }
+      li.playing:before { content: '♬'; width: 14px; height: 14px; padding: 3px; line-height: 14px; margin: 0px; position: absolute; left: -24px; top: 9px; color: #000; font-size: 13px; text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2); }*/
+      
+      
+      
+.audiojs {
+	height: 22px; 
+	background: #404040;
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #444), color-stop(0.5, #555), color-stop(0.51, #444), color-stop(1, #444));
+        background-image: -moz-linear-gradient(center top, #444 0%, #555 50%, #444 51%, #444 100%);
+        -webkit-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3); 
+	-moz-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+        -o-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3); 
+	box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+	font-size: 11px;
+}
+.audiojs .play-pause { width: 15px; height: 20px; padding: 0px 8px 0px 0px; }
+.audiojs p { width: 25px; height: 20px; margin: -3px 0px 0px -1px; }
+.audiojs .scrubber { background: #5a5a5a; width: 310px; height: 10px; margin: 5px; }
+.audiojs .progress { 
+	height: 10px; 
+	width: 0px; 
+	background: #ccc;
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ccc), color-stop(0.5, #ddd), color-stop(0.51, #ccc), color-stop(1, #ccc));
+        background-image: -moz-linear-gradient(center top, #ccc 0%, #ddd 50%, #ccc 51%, #ccc 100%); }
+.audiojs .loaded { 
+	height: 10px; 
+	background: #000;
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #222), color-stop(0.5, #333), color-stop(0.51, #222), color-stop(1, #222));
+        background-image: -moz-linear-gradient(center top, #222 0%, #333 50%, #222 51%, #222 100%); }
+.audiojs .time { float: left; height: 25px; line-height: 25px; }
+.audiojs .error-message { height: 24px;line-height: 24px; }
+
+.tracklist { list-style: none; font-size: 13px; }
+      
+.track-details { min-height: 20px; width: 448px; padding: 1px 6px; background: #eee; line-height: 20px;
+        -webkit-box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.15); -moz-box-shadow: inset 1px 1px 5px rgba(0, 0, 0, 0.15); }
+.track-details:before { content: "♬ "; color: #3589C1; font-weight: bold; }
+.track-details span { font-style: normal; color: #999; }
+.track-details a, .track-details a:visited { text-decoration: none; color: #4A4B4C; display: inline-block; vertical-align: top; }
+.track-details a.playing { color: #3589C1; font-weight: bold;
+}
+.track-details a:hover {
+	color: #3589C1;
+}

@@ -1,0 +1,43 @@
+#contact_info {
+		margin-top: 30px;
+		margin-bottom: 50px;
+}
+
+
+#newsletter input {
+	border: 1px solid #4A4B4C;
+	width: 250px;
+	height: 24px;
+}
+
+.intro {
+		font-style: italic;
+		margin-top: 10px;
+		margin-bottom: 25px;
+}
+
+#newsletter label {
+		display: inline-block;
+		width: 127px;
+		font-weight: bold;
+		text-transform: uppercase;
+		text-align: right;
+		padding-right: 10px;
+		font-size: 11px;
+}
+
+#newsletter button {
+	background-color: white;
+	cursor: pointer;
+	font-family: 'Nixie One',cursive;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-left: 14px;
+	color: #4A4B4C;
+}
+
+#newsletter button:hover {
+		background: #4A4B4C;
+		color: #FFFFFF;
+}

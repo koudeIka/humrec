@@ -1,0 +1,62 @@
+
+#liste_artistes .artiste {
+	height: 40px;
+	margin-top: 5px;
+}
+
+#liste_artistes h2 {
+	display: block;
+	float: left;
+	font-size: 1.2em;
+	height: 40px;
+	line-height: 40px;
+	margin: 0;
+	padding: 0 0 0 5px;
+	width: 385px;
+}
+
+#liste_artistes .artiste .label {
+	display: block;
+	font-size: 13px;
+	height: 40px;
+	line-height: 40px;
+	margin-left: 419px;
+	width: 114px;
+}
+
+
+
+.artiste .art_show {
+	margin-left: 550px;
+	margin-top: -25px;
+	position: absolute;
+}
+
+.artiste .button_delete {
+	float: right;
+	font-size: 0.8em;
+	margin-right: 10px;
+	margin-top: -34px;
+}
+
+.artiste.hidden { display: none; }
+
+
+#artiste_edit {
+		padding: 5px;
+}
+
+#artiste_edit.hidden {
+		padding: 0px;
+		display: none;
+}
+
+#artiste_add {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 10px;
+		text-align: center;
+		width: 190px;
+}
+
