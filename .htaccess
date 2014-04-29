@@ -1,0 +1,3 @@
+Options +FollowSymlinks
+RewriteEngine on
+RewriteRule ^releases/([_a-z0-9]*).php$  releases.php?release=$1 [L]
