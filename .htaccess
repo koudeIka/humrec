@@ -7,4 +7,5 @@ RewriteBase /
 #RewriteRule ([a-z0-9_\-]+)/$ 	                    						releases.php?url=rewrite&action=$1								            [NC,L]
 
 RewriteRule ^release::([a-z0-9_\-]+)$		releases.php?url=rewrite&rel_url=$1		[NC,L]
+RewriteRule ^artist::([a-z0-9_\-]+)$		artistes.php?url=rewrite&art_url=$1		[NC,L]
 RewriteRule ^artiste::([a-z0-9_\-]+)$		artistes.php?url=rewrite&art_url=$1		[NC,L]
