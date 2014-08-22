@@ -13,7 +13,8 @@ echo "<p><b>Hum.</b> édite des enregistrements.<br/>
 <p>
 crédits<br />
 website : Patrick Peronny<br />
-police : <a class='link_in_text' href='http://openfontlibrary.org/face/wirewyrm'>WireWyrm</a>
+police : <a class='link_in_text' href='http://openfontlibrary.org/fr/font/wirewyrm' target='_blank'>WireWyrm</a><br />
+source : <a class='link_in_text' href='https://github.com/koudeIka/humrec' target='_blank'>https://github.com/koudeIka/humrec</a>
 </p>
 <p>----</p>
 <p>
