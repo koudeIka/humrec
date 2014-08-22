@@ -8,11 +8,11 @@ url_admin = "http://www.humrec.org/admin/"
 default_lang = "fr"
 
 [folder]
-base	= "/homez.56/humrec/www/"
-public = "/homez.56/humrec/www/"
-includes	= "/homez.56/humrec/www/includes/"
-classes	= "/homez.56/humrec/www/includes/classes/"
-puppets	= "/homez.56/humrec/www/includes/puppets/"
+base	= "/"
+public = "/"
+includes	= "/includes/"
+classes	= "/includes/classes/"
+puppets	= "/includes/puppets/"
 
 [path]
 images	= "design/images/"
@@ -29,10 +29,10 @@ js_local = "js/"
 ;images_label_Xx200 = "images/Xx200/"
 
 [photos_folder]
-real_size			= "/homez.56/humrec/www/photos/real_size/"
-120x80				= "/homez.56/humrec/www/photos/120x80/"
-200x200				= "/homez.56/humrec/www/photos/200x200/"
-200x320				= "/homez.56/humrec/www/photos/200x320/"
+real_size			= "/photos/real_size/"
+120x80				= "/photos/120x80/"
+200x200				= "/photos/200x200/"
+200x320				= "/photos/200x320/"
 
 [photos_path]
 originals		= "photos/originals/"
@@ -42,10 +42,10 @@ real_size		= "photos/real_size/"
 200x320			= "photos/200x320/"
 
 [mysql]
-server	= "mysql51-53.perso"
-user	= "humrecords"
-password	= "humus12"
-database	= "humrecords"
+server	= ""
+user	= ""
+password	= ""
+database	= ""
 
 
 [mail]

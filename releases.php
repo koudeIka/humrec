@@ -13,6 +13,15 @@ if($_SESSION['lang'] == 'fr')
 	$l10n_download = "Download";
 }
 
+
+if(!empty($_GET['release_name']))
+{
+	// print_r($_GET);
+}
+
+
+
+
 //echo "<h1>Releases</h1>";
 foreach (releases::getAll() as $rel_id)
 {
