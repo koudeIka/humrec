@@ -169,6 +169,16 @@ function cardsRelease()
 									rel_number: parameters.rel_number
 							}
 						);
+					} else if ( typeof parameters.rel_url != "undefined" )
+					{
+						$.post(
+							"ajax/releases.ajax.php",
+							{
+									action: "save_rel_url",
+									rel_id: mycardsRelease.rel_id,
+									rel_url: parameters.rel_url
+							}
+						);
 					} else if ( typeof parameters.rel_title != "undefined" )
 					{
 						$.post(
@@ -585,6 +595,31 @@ function cardsRelease()
 
 									case "keyup":
 											mycardsRelease.save({rel_title: $(this).val()});
+											break;
+								}
+							})
+							.undelegate('.rel_url input', "mouseenter mouseleave focusin focusout keyup")
+							.delegate('.rel_url input', "mouseenter mouseleave focusin focusout keyup", function(event) {
+								switch(event.type)
+								{
+									case "mouseenter":
+											$(this).addClass("ui-state-hover");
+											break;
+
+									case "mouseleave":
+											$(this).removeClass("ui-state-hover");
+											break;
+
+									case "focusin":
+											$(this).addClass("ui-state-active");
+											break;
+
+									case "focusout":
+											$(this).removeClass("ui-state-active");
+											break;
+
+									case "keyup":
+											mycardsRelease.save({rel_url: $(this).val()});
 											break;
 								}
 							})

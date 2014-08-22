@@ -73,6 +73,10 @@ try {
 				<legend>Titre</legend>
 				<input type='text' value=\"".$release->rel_title."\" class='ui-state-default' />
 			</fieldset>
+			<fieldset class='rel_url'>
+				<legend>Url personnalisé</legend>
+				<input type='text' value=\"".$release->rel_url."\" class='ui-state-default' />
+			</fieldset>
 			<fieldset class='rel_date'>
 				<legend>Date</legend>
 				<input type='text' value=\"".substr(date::enToFr($release->rel_date), 0, 10)."\" class='ui-state-default' />
@@ -182,6 +186,12 @@ try {
 		case 'save_rel_number':
 			$release = new releases($_POST['rel_id']);
 			$release->rel_number = $_POST['rel_number'];
+			$release->save();
+			break;
+			
+		case 'save_rel_url':
+			$release = new releases($_POST['rel_id']);
+			$release->rel_url = $_POST['rel_url'];
 			$release->save();
 			break;
 

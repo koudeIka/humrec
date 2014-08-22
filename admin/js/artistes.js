@@ -149,6 +149,16 @@ function cardsArtiste()
 									art_name: parameters.art_name
 							}
 						);
+					} else if ( typeof parameters.art_url != "undefined" )
+					{
+						$.post(
+							"ajax/artistes.ajax.php",
+							{
+									action: "save_art_url",
+									art_id: mycardsArtiste.art_id,
+									art_url: parameters.art_url
+							}
+						);
 					} else if ( typeof parameters.art_homepage != "undefined" )
 					{
 						$.post(
@@ -354,6 +364,32 @@ function cardsArtiste()
 									case "keyup":
 											$('.artiste[data-art_id="'+mycardsArtiste.art_id+'"] h2').html($(this).val());
 											mycardsArtiste.save({art_name: $(this).val()});
+											break;
+								}
+							})
+							.undelegate('.art_url input', "mouseenter mouseleave focusin focusout keyup")
+							.delegate('.art_url input', "mouseenter mouseleave focusin focusout keyup", function(event) {
+								switch(event.type)
+								{
+									case "mouseenter":
+											$(this).addClass("ui-state-hover");
+											break;
+
+									case "mouseleave":
+											$(this).removeClass("ui-state-hover");
+											break;
+
+									case "focusin":
+											$(this).addClass("ui-state-active");
+											break;
+
+									case "focusout":
+											$(this).removeClass("ui-state-active");
+											break;
+
+									case "keyup":
+											$('.artiste[data-art_id="'+mycardsArtiste.art_id+'"] h2').html($(this).val());
+											mycardsArtiste.save({art_url: $(this).val()});
 											break;
 								}
 							})

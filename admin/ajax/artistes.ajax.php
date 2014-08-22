@@ -34,6 +34,10 @@ try {
 				<input type='text' value=\"".$artiste->art_name."\" class='ui-state-default' />
 			</fieldset>
 			<fieldset class='art_homepage'>
+				<legend>Url personnalisé</legend>
+				<input type='text' value=\"".$artiste->art_url."\" class='ui-state-default' />
+			</fieldset>
+			<fieldset class='art_homepage'>
 				<legend>Homepage</legend>
 				<input type='text' value=\"".$artiste->art_homepage."\" class='ui-state-default' />
 			</fieldset>
@@ -72,6 +76,12 @@ try {
 		case 'save_art_name':
 			$artiste = new artistes($_POST['art_id']);
 			$artiste->art_name = $_POST['art_name'];
+			$artiste->save();
+			break;
+			
+		case 'save_art_url':
+			$artiste = new artistes($_POST['art_id']);
+			$artiste->art_url = $_POST['art_url'];
 			$artiste->save();
 			break;
 
