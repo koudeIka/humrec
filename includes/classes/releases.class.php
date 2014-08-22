@@ -19,6 +19,7 @@ class releases
 	public $rel_id;
 	public $rel_number;
 	public $rel_title;
+	public $rel_url;
 	public $rel_date;
 	public $rel_tracklist;
 	public $rel_content_fr;
@@ -53,6 +54,7 @@ class releases
 		$this->rel_id	= $this->mysql->secure($rel_id);
 		$this->rel_number	= null;
 		$this->rel_title	= null;
+		$this->rel_url		= null;
 		$this->rel_date	= null;
 		$this->rel_tracklist	= null;
 		$this->rel_content_fr	= null;
@@ -78,6 +80,7 @@ class releases
 				$this->rel_id	= $obj_releases->rel_id;
 				$this->rel_number	= $obj_releases->rel_number;
 				$this->rel_title	= $obj_releases->rel_title;
+				$this->rel_url	= $obj_releases->rel_url;
 				$this->rel_date	= $obj_releases->rel_date;
 				$this->rel_tracklist	= $obj_releases->rel_tracklist;
 				$this->rel_content_fr	= $obj_releases->rel_content_fr;
@@ -170,6 +173,19 @@ class releases
 		{
 			return true;
 		};
+	}
+	
+	public static function getByUrl($rel_url)
+	{
+		global $mysql;
+		$rels = array();
+		$req_all = $mysql->query("	SELECT rel_id FROM releases WHERE rel_url='".$mysql->secure($rel_url)."' LIMIT 1");
+		if($req_all->numRows() > 0)
+		{
+			$obj_all = $req_all->fetchRow();
+			return $obj_all->rel_id;
+		}
+		return false;
 	}
 
 	public static function getAll($online=true)

@@ -6,6 +6,7 @@ class artistes
   **/
 	public $art_id;
 	public $art_name;
+	public $art_url;
 	public $art_description_fr;
 	public $art_description_en;
 	public $art_homepage;
@@ -30,6 +31,7 @@ class artistes
 
 		$this->art_id	= $this->mysql->secure($art_id);
 		$this->art_name	= null;
+		$this->art_url	= null;
 		$this->art_description_fr	= null;
 		$this->art_description_en	= null;
 		$this->art_homepage	= null;
@@ -46,6 +48,7 @@ class artistes
 				$obj_artistes = $req_artistes->fetchRow();
 				$this->art_id	= $obj_artistes->art_id;
 				$this->art_name	= $obj_artistes->art_name;
+				$this->art_url	= $obj_artistes->art_url;
 				$this->art_description_fr	= $obj_artistes->art_description_fr;
 				$this->art_description_en	= $obj_artistes->art_description_en;
 				$this->art_homepage	= $obj_artistes->art_homepage;
@@ -144,6 +147,19 @@ class artistes
 			$arts[] = $obj_all->art_id;
 		}
 		return $arts;
+	}
+	
+	public static function getByUrl($art_url)
+	{
+		global $mysql;
+		$rels = array();
+		$req_all = $mysql->query("	SELECT art_id FROM artistes WHERE art_url='".$mysql->secure($art_url)."' LIMIT 1");
+		if($req_all->numRows() > 0)
+		{
+			$obj_all = $req_all->fetchRow();
+			return $obj_all->art_id;
+		}
+		return false;
 	}
 
 // 	public function getPhotos()
