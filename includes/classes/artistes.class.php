@@ -78,13 +78,13 @@ class artistes
 
 		if(empty($this->art_id))
 		{//-- Insert
-			if(!$this->mysql->query("INSERT INTO artistes (art_name, art_description_fr, art_description_en, art_homepage, art_show)
-									VALUES ('".$this->mysql->secure($this->art_name)."', '".$this->mysql->secure($this->art_description_fr)."', '".$this->mysql->secure($this->art_description_en)."', '".$this->mysql->secure($this->art_homepage)."', ".$this->mysql->secure($this->art_show).");")) { $flag_error = true; };
+			if(!$this->mysql->query("INSERT INTO artistes (art_name, art_url, art_description_fr, art_description_en, art_homepage, art_show)
+									VALUES ('".$this->mysql->secure($this->art_name)."', '".$this->mysql->secure($this->art_url)."', \"".$this->mysql->secure($this->art_description_fr)."\", \"".$this->mysql->secure($this->art_description_en)."\", '".$this->mysql->secure($this->art_homepage)."', ".$this->mysql->secure($this->art_show).");")) { $flag_error = true; };
 			$this->art_id = $this->mysql->lastInsertId();
 		}
 		else
 		{//-- Update
-			if(!$this->mysql->query("UPDATE artistes SET art_name='".$this->mysql->secure($this->art_name)."', art_description_fr=\"".$this->mysql->secure($this->art_description_fr)."\", art_description_en=\"".$this->mysql->secure($this->art_description_en)."\", art_homepage='".$this->mysql->secure($this->art_homepage)."', art_show='".$this->mysql->secure($this->art_show)."'
+			if(!$this->mysql->query("UPDATE artistes SET art_name='".$this->mysql->secure($this->art_name)."', art_url='".$this->mysql->secure($this->art_url)."', art_description_fr=\"".$this->mysql->secure($this->art_description_fr)."\", art_description_en=\"".$this->mysql->secure($this->art_description_en)."\", art_homepage='".$this->mysql->secure($this->art_homepage)."', art_show='".$this->mysql->secure($this->art_show)."'
 									WHERE art_id=".$this->mysql->secure($this->art_id).";")) { $flag_error = true; };
 		}
 

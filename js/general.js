@@ -11,6 +11,30 @@ function validateEmail(email) {
 
 
 jQuery(document).ready(function() {
+	
+	$('#navigation')
+		.on("click", '[href="releases.php"]', function() {
+			if($('#releases_link').is(":visible"))
+			{
+				$('#releases_link').slideUp();
+			}
+			else
+			{
+				$('#releases_link').slideDown();
+			}
+			return false;
+		})
+		.on("click", '[href="artistes.php"]', function() {
+			if($('#artistes_link').is(":visible"))
+			{
+				$('#artistes_link').slideUp();
+			}
+			else
+			{
+				$('#artistes_link').slideDown();
+			}
+			return false;
+		});
 
 	$('#newsletter_mail')
 		    .focus(function() {
@@ -53,10 +77,10 @@ jQuery(document).ready(function() {
 	 $('#entete').jqFancyTransitions({
 			effect: "curtain",
 			width: 1000,
-			height: 218,
+			height: 300,
 			strips: 30,
-			delay: 10000,
-			stripDelay: 100,
+			delay: 15000,
+			stripDelay: 500,
 			position: "curtain",
 			direction: "fountain"
 	 });

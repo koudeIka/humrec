@@ -388,7 +388,6 @@ function cardsArtiste()
 											break;
 
 									case "keyup":
-											$('.artiste[data-art_id="'+mycardsArtiste.art_id+'"] h2').html($(this).val());
 											mycardsArtiste.save({art_url: $(this).val()});
 											break;
 								}

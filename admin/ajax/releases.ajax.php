@@ -354,23 +354,23 @@ try {
 
 		case 'save_paypal':
 					$release = new releases($_POST['rel_id']);
-					if(!empty($_POST['rel_paypal_id']))
+					if(isset($_POST['rel_paypal_id']))
 					{
 					      $release->rel_paypal_id = $_POST['rel_paypal_id'];
 					}
-					if(!empty($_POST['rel_paypal_priceue']))
+					if(isset($_POST['rel_paypal_priceue']))
 					{
 					      $release->rel_paypal_priceue = $_POST['rel_paypal_priceue'];
 					}
-					if(!empty($_POST['rel_paypal_priceworld']))
+					if(isset($_POST['rel_paypal_priceworld']))
 					{
 					      $release->rel_paypal_priceworld = $_POST['rel_paypal_priceworld'];
 					}
-					if(!empty($_POST['rel_paypal_currency_code']))
+					if(isset($_POST['rel_paypal_currency_code']))
 					{
 					      $release->rel_paypal_currency_code = $_POST['rel_paypal_currency_code'];
 					}
-					if(!empty($_POST['rel_paypal_encrypted']))
+					if(isset($_POST['rel_paypal_encrypted']))
 					{
 					      $release->rel_paypal_encrypted = $_POST['rel_paypal_encrypted'];
 					}

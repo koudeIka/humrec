@@ -33,7 +33,7 @@ try {
 				<legend>Nom</legend>
 				<input type='text' value=\"".$artiste->art_name."\" class='ui-state-default' />
 			</fieldset>
-			<fieldset class='art_homepage'>
+			<fieldset class='art_url'>
 				<legend>Url personnalisé</legend>
 				<input type='text' value=\"".$artiste->art_url."\" class='ui-state-default' />
 			</fieldset>
