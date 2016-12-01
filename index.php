@@ -1,4 +1,5 @@
 <?php
+/* test svn */
 define("HTML_TITLE", "News");
 require_once('application_top.php');
 include_once('header.php');
